@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>simplephy Demo</title>
+    </head>
+    <body>
+            
+        <canvas id="gravitydemo" width="700" height="300"></canvas>
+        <form>
+          <p>
+            Upward Velocity:
+            <input type="text" placeholder="upward" id="upwardV" value="15" />
+          </p>
+          <p>
+            Forward Velocity:
+            <input type="text" placeholder="forward" id="forwardV" value="4" />
+          </p>
+          <input type="button" onclick="AddBall()"  value="Add Ball"/>
+          <p>
+            Gravity:
+            <input type="text" placeholder="gravity" id="gravity" value="0.3" />
+          </p>
+          <p>
+            Friction:
+            <input type="text" placeholder="friction" id="friction" value="0.042" />
+          </p>
+          <p>
+            Bounce:
+            <input type="checkbox" checked="true" id="bounce" checked/>
+          </p>
+          <p>
+            Collisions:
+            <input type="checkbox" id="collisions" />
+          </p>
+          <input type="button" onClick="ChangeEnvironment()" value="Update Environment" />
+        </form>
+    </body>
+</html>
